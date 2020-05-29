@@ -736,6 +736,38 @@
             smartBackspace: false,
         });
     </script>
+    <script type="text/javascript">
+        var myFullpage = new fullpage("#fullpage", {
+            // scrollingSpeed: 0, //da togliere alla fine
+            afterLoad: function (anchorLink, index) {
+                console.log(
+                    "AFTER LOAD - anchorLink:" +
+                    anchorLink +
+                    " index:" +
+                    index
+                );
+            },
+            onLeave: function (index, nextIndex, direction) {
+                if (nextIndex.index == 14 && direction == "down") {
+                    //Crea il terminale animato (install apache)
+                    var termynal = new Termynal("#termynal");
+                }
+
+                if (nextIndex.index == 16 && direction == "down") {
+                    //Crea il terminale animato (trasferimento file)
+                    var termynal = new Termynal("#termynal-ftp-upload");
+                }
+                console.log(
+                    "ONLEAVE - index:" +
+                    index +
+                    " nextIndex:" +
+                    nextIndex +
+                    " direction:" +
+                    direction
+                );
+            },
+        });
+    </script>
 
 </body>
 
