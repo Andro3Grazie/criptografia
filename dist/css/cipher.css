@@ -1,0 +1,45 @@
+@font-face {
+    font-family: "InputSerifMonoWeb";
+    src: url(https://djr.com/assets/demo/Input_Serif_Mono-VF_7.woff) format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@keyframes decipher {
+    0% {
+        font-variation-settings: "CPHR"1000;
+    }
+
+    100% {
+        font-variation-settings: "CPHR"0;
+    }
+}
+
+@keyframes cipher {
+    /* 0% {
+        font-variation-settings: "CPHR"0;
+    } */
+
+    100% {
+        font-variation-settings: "CPHR"1000;
+    }
+}
+
+.cipher {
+    font-family: "InputSerifMonoWeb", monospace;
+    /* font-size: 1.25rem; */
+    /* line-height: 1.5em; */
+
+    animation-name: cipher;
+    animation-timing-function: linear;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+.cipher:hover {
+    animation-name: decipher;
+    animation-duration: 1.6s;
+    animation-timing-function: linear;
+    animation-iteration-count: 1;
+    /* animation-fill-mode: forwards; */
+}
