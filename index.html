@@ -42,7 +42,7 @@
                 ">
       <div class="row">
         <div class="col my-auto">
-          <h3 class="text-center title display-3 cipher">
+          <h3 class="text-center title display-3">
             CRIPTOGRAFIA
           </h3>
         </div>
@@ -76,10 +76,12 @@
                 ">
       <div class="row">
         <div class="col my-auto text-center">
-          <h3 class="text-center title display-3">
-            GIULIO CESARE
-          </h3>
-          <span class="h3" id="cifrariList"></span>
+          <span class="title">
+            <h3 class="text-center display-3">
+              GIULIO CESARE
+            </h3>
+            <span class="h3" id="cifrariList"></span>
+          </span>
         </div>
 
         <!-- col end -->
@@ -94,12 +96,14 @@
                 ">
       <div class="row">
         <div class="col my-auto">
-          <h3 class="text-center title display-3">
-            DISCO CIFRANTE
-          </h3>
-          <h3 class="text-center">
-            & altri rimedi
-          </h3>
+          <span class="title">
+            <h3 class="text-center display-3">
+              DISCO CIFRANTE
+            </h3>
+            <h3 class="text-center">
+              & altri rimedi
+            </h3>
+          </span>
         </div>
 
         <!-- col end -->
@@ -183,10 +187,12 @@
                 ">
       <div class="row">
         <div class="col my-auto">
-          <h3 class="text-center title display-3">
-            RSA
-          </h3>
-          <h3 class="text-center">Rivest–Shamir–Adleman</h3>
+          <span class="title">
+            <h3 class="text-center display-3">
+              RSA
+            </h3>
+            <h3 class="text-center">Rivest–Shamir–Adleman</h3>
+          </span>
         </div>
 
         <!-- col end -->
@@ -202,7 +208,7 @@
       <div class="intro text-center">
         <div class="row">
           <div class="col text-right my-auto">
-            <h3 class="display-4">Tocca a voi!</h3>
+            <h3 class="display-4 title">Tocca a voi!</h3>
           </div>
           <div class="col color">
             <?xml version="1.0" encoding="utf-8"?>
@@ -811,7 +817,7 @@
       <div class="intro text-center">
         <div class="row">
           <div class="col text-center my-auto">
-            <h3 class="display-4">GRAZIE</h3>
+            <h3 class="display-4 title">GRAZIE</h3>
             <h5 class="firme">Alessandro Mieli - Francesco Massimei - Gabriele Muzi - Lorenzo Napoli</h5>
           </div>
         </div>
@@ -832,6 +838,11 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
 
 
+  <script>
+    $('.title').hover(function () {
+      $(this).addClass('decipher');
+    });
+  </script>
   <!-- Scrittura animata -->
   <script>
     //Lista hosting slide5
@@ -854,7 +865,7 @@
   </script>
   <script type="text/javascript">
     var myFullpage = new fullpage("#fullpage", {
-      // scrollingSpeed: 0, //da togliere alla fine
+      scrollingSpeed: 0, //da togliere alla fine
       afterLoad: function (anchorLink, index) {
         console.log(
           "AFTER LOAD - anchorLink:" +

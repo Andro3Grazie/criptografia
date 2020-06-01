@@ -5,6 +5,7 @@
     font-style: normal;
 }
 
+
 @keyframes decipher {
     0% {
         font-variation-settings: "CPHR"1000;
@@ -16,30 +17,29 @@
 }
 
 @keyframes cipher {
-    /* 0% {
+    0% {
         font-variation-settings: "CPHR"0;
-    } */
+    }
 
     100% {
         font-variation-settings: "CPHR"1000;
     }
 }
 
-.cipher {
-    font-family: "InputSerifMonoWeb", monospace;
-    /* font-size: 1.25rem; */
-    /* line-height: 1.5em; */
-
-    animation-name: cipher;
+/* .cipher {
+    animation-name: decipher;
+    animation-duration: 1.25s;
     animation-timing-function: linear;
+    animation-delay: 0s;
+    animation-iteration-count: 1;
+
+} */
+
+.decipher {
+    animation-name: decipher;
+    animation-duration: 1.25s;
+    animation-timing-function: linear;
+    animation-delay: 0s;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
-}
-
-.cipher:hover {
-    animation-name: decipher;
-    animation-duration: 1.6s;
-    animation-timing-function: linear;
-    animation-iteration-count: 1;
-    /* animation-fill-mode: forwards; */
 }
