@@ -16,8 +16,8 @@ La criptografia è una branca della crittologia, ovvero la disciplina che si occ
     - [Implementazione](#Implementazione)
   - [Hash](#Hash)
   - [WhatsApp](#WhatsApp)
-- [Fonti](#Fonti)
 - [Redattori](#Redattori)
+- [Fonti](#Fonti)
 
 
 ## Storia
