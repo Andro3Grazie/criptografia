@@ -35,18 +35,18 @@ In base al genere di chiave utilizzata è possibile suddividere in due tipologie
 
 Questo sistema, prevedendo l'uso della stessa chiave in entrambe le direzioni è molto facile e veloce da implementare. L'algoritmo più diffusso venne sviluppato nel 1998 da due crittografi belgi e prese il nome di *Advanced Encryption Standard (AES)*. Nel novembre del 2001 dopo studi, standardizzazioni e selezione tra i vari algoritmi proposti il *NIST*, ovvero il *National Institute of Standards and Technology* decise di adottarlo come standard. La *National Security Agency (NSA)*, ovvero l'organismo che si occupa della difesa degli stati uniti d'America scelse invece il Rijndael per via della sua maggior flessibilità.
 
-#### Funzionamento
-L'AES ha un blocco di dimensione fissa pari a 128 bit e, la chiave può essere di eguali misure, di 192 o 256 bit. 
-Il Rijndael invece, gestisce differenti dimensioni di blocchi e di chiave, questi ultimi devono essere un multiplo di 32 bit con 128 come minimo e e 256 come massimo.
+  - #### Funzionamento
+    L'AES ha un blocco di dimensione fissa pari a 128 bit e, la chiave può essere di eguali misure, di 192 o 256 bit. 
+    Il Rijndael invece, gestisce differenti dimensioni di blocchi e di chiave, questi ultimi devono essere un multiplo di 32 bit con 128 come minimo e e 256 come massimo.
 
-#### Utilizzo
-Questi due sistemi vengono utilizzati per proteggere informazioni secretate. Per il livello **secret** è sufficente una chiave a 128 bit, mentre per il livello **top secret** si consiglia l'uso di chiavi a 192 o 256 bit. L'utilizzo di chiavi più lunghe da parte di NSA per documenti così importanti portò alcuni a pensare che avevano individuato un potenziale attacco che potrebbe forzare una chiave relativamente corta, gli esperti dicnono invece che semplicemente è un piano a lungo termine per garantire un elevato margine di sicurezza per i prossimi decenni. 
+  - #### Utilizzo
+    Questi due sistemi vengono utilizzati per proteggere informazioni secretate. Per il livello **secret** è sufficente una chiave a 128 bit, mentre per il livello **top secret** si consiglia l'uso di chiavi a 192 o 256 bit. L'utilizzo di chiavi più lunghe da parte di NSA per documenti così importanti portò alcuni a pensare che avevano individuato un potenziale attacco che potrebbe forzare una chiave relativamente corta, gli esperti dicnono invece che semplicemente è un piano a lungo termine per garantire un elevato margine di sicurezza per i prossimi decenni. 
 
-#### Forzatura
-Qeusti algoritmi vengono forzati riducendo il numero di round, i migliori attacchi, effettuati nel 2006, sono riusciti a forzare l'AES con 7 round a 128 bit, 8 round  a 192 bit e 9 round con chiave di 256 bit.
-I crittografi hanno fatto notare che la differenza tra i round effettuati e quelli prima dei quali l'algoritmo non sia più forzabile è ridotta, in particolare con chiavi corte. Attualmente una chiave a 128 bit produce 3,4 x 10^38 combinazioni, considerato il progressivo aumento delle potenze di calcolo delle CPU e il miglioramento delle tecniche di analisi, per forzare una chiave di quel tipo con attacchi Brute Force servirà sempre meno tempo. Tramite un progetto di [distributed.net](https://www.distributed.net/Main_Page) che prevedeva l'utilizzo del tempo libero di CPU di volontari, è stata forzata una chiave a 64 bit per l'algoritmo RC5, uno dei candidati all'AES, in quasi 5 anni.
-Nel 2002 venne lanciato un attacco, teorico in quanto impraticabile per via dell'enorme quantità di tempo macchina richiesto, chiamato XSL, che ha mostrato un potenziale punto debole di questo algoritmo. Alcuni esperti hanno mosso delle osservazioni agli autori dell'attacco, affermando che sono stati commessi errori teorici e che le loro stime sono ottimistiche.<br />
-Allo stato attuale, la reale pericolosità di questo attacco è un incognita, l'AES è comunque considerato un algoritmo veloce, sicuro e gli attacchi, fin ora presentati, si sono rivelati degli interessanti studi teorici ma con scarsa utilità nella pratica. 
+  - #### Forzatura
+    Qeusti algoritmi vengono forzati riducendo il numero di round, i migliori attacchi, effettuati nel 2006, sono riusciti a forzare l'AES con 7 round a 128 bit, 8 round  a 192 bit e 9 round con chiave di 256 bit.<br />
+    I crittografi hanno fatto notare che la differenza tra i round effettuati e quelli prima dei quali l'algoritmo non sia più forzabile è ridotta, in particolare con chiavi corte. Attualmente una chiave a 128 bit produce 3,4 x 10^38 combinazioni, considerato il progressivo aumento delle potenze di calcolo delle CPU e il miglioramento delle tecniche di analisi, per forzare una chiave di quel tipo con attacchi Brute Force servirà sempre meno tempo. Tramite un progetto di [distributed.net](https://www.distributed.net/Main_Page) che prevedeva l'utilizzo del tempo libero di CPU di volontari, è stata forzata una chiave a 64 bit per l'algoritmo RC5, uno dei candidati all'AES, in quasi 5 anni. <br />
+    Nel 2002 venne lanciato un attacco, teorico in quanto impraticabile per via dell'enorme quantità di tempo macchina richiesto, chiamato XSL, che ha mostrato un potenziale punto debole di questo algoritmo. Alcuni esperti hanno mosso delle osservazioni agli autori dell'attacco, affermando che sono stati commessi errori teorici e che le loro stime sono ottimistiche.<br />
+    Allo stato attuale, la reale pericolosità di questo attacco è un incognita, l'AES è comunque considerato un algoritmo veloce, sicuro e gli attacchi, fin ora presentati, si sono rivelati degli interessanti studi teorici ma con scarsa utilità nella pratica. 
 
 
 ## Chiave asimmetrica
