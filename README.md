@@ -51,7 +51,16 @@ Questo sistema, prevedendo l'uso della stessa chiave in entrambe le direzioni è
 
 ## Chiave asimmetrica
 
-Gli algoritmi asimmetrici utilizzano due chiavi interdipendenti, una per cifrare e l'altra per decodificare, la prima è pubblica mentre la seconda privata. Il fatto di essere a conoscenza di una delle due chiavi non permette di risalire a quella a noi sconosciuta. L'algoritmo che viene maggiormente utilizzato, soprattutto in ambito di commercio elettronico nei protocolli *SSL*, è chiamato *RSA*, prende il nome dai ricercatori del *MIT* che nel 1977 lo svilupparono , *Rivest, Shamir e Adleman*.
+Gli algoritmi asimmetrici utilizzano due chiavi interdipendenti, una per cifrare e l'altra per decodificare, la prima è pubblica mentre la seconda privata. Il fatto di essere a conoscenza di una delle due chiavi non permette di risalire a quella a noi sconosciuta. L'algoritmo che viene maggiormente utilizzato, soprattutto in ambito di commercio elettronico nei protocolli *SSL*, è chiamato *RSA*, prende il nome dai ricercatori del *MIT* che nel 1977 lo svilupparono , *Rivest, Shamir e Adleman*.<br />
+Per garantirne il corretto funzionamento è necessario che ogni utente si crei autonomamente entrambe le chiavi, una da rendere pubblica detta diretta e una da mantere privata, detta inversa. In rete noi possiamo trovare una sorta di elenco telefonico con tutte le chiavi dirette in caso necessitassimo di comunicare con un certo utente.
+
+  - #### Sicurezza
+  Per ottenere una discreta sicurezza si consiglia l'utilizo di chiavi binarie pari a un numero minimo di 2048 bit. Le chiavi con un minor numero di bit come quelle a 512 sono ricavabili in poche ora, mentre quelle a 1024, anche se ancora largamente utilizzate sono sconsigliate.<br />
+  Con questo metodo è possibile anche conoscere la provenienza del messaggio, in quanto io mittente, cifrandolo con la mia chiave privata e poi con la pubblica del destinatario, quest'ultimo capirà che il messaggio viene da me e poi potrà leggerlo. L'RSA a livello teorico non è completamente sicuro, perché vi è la possibilità che conoscendo la chiave pubblica si possa risalire al messaggio; l'enorme mole di cui questa operazione necessiterebbe fa di questo algoritmo un sistema di affidabilità pressoché assoluta. Questo algoritmo è infatti la base dei sistemi crittografici su cui si fondano i sistemi di sicurezza informatici utilizzati sulla rete per autenticare gli utenti. 
+
+  - #### Implementazione
+  Considerate le notevoli esigenze hardware per consentire un efficace utilizzo di tale sistema è consigliabile l'uso combinato di questo e del metodo AES. Con l'RSA il codifica un unico messaggio, contenente una chiave segreta; tale chiave verrà poi utilizzata per scambiarsi suddetti messaggi con l'algoritmo a chiave simmetrica.<br />
+  Oggi questo algoritmo è quello maggiormente utilizzato per la cifratura di firme digitali, insieme al DSS; anche questo come l'RSA fa uso di un sistema criptografico a chiave pubblica.
 
 
 ## Fonti
