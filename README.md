@@ -78,7 +78,7 @@ La criptografia end-to-end ha proprio l'obiettivo di impedirne la modifica o la 
 
 ## Redattori
 
-Questo documento è stato stilato completamente dalle seguenti persone, in base alle [informazioni recepite nella lista che sussegue](#Fonti)**:** [Alessandro Mieli](https://alessandromieli.it/), Francesco Massimei, Gabriele Muzi e Lorenzo Napoli.
+Questo documento è stato stilato completamente dalle seguenti persone, in base alle [informazioni recepite](#Fonti) nella lista che sussegue: [Alessandro Mieli](https://alessandromieli.it/), Francesco Massimei, Gabriele Muzi e Lorenzo Napoli.
 
 
 ## Fonti
