@@ -1,5 +1,7 @@
 # CRIPTOGRAFIA
 
+La criptografia è una branca della crittologia, ovvero la disciplina che si occupa delle scritture nascoste. Questa scienza cifra un messaggio in modo da renderlo incomprensibile a tutti coloro che non possiedono il codice di decriptazione, anche detto chiave.
+
 ## Indice
 
 - [Introduzione](#Introduzione)
@@ -15,11 +17,7 @@
   - [Hash](#Hash)
   - [WhatsApp](#WhatsApp)
 - [Fonti](#Fonti)
-
-
-## Introduzione
-
-La criptografia è una branca della crittologia, ovvero la disciplina che si occupa delle scritture nascoste. Questa scienza cifra un messaggio in modo da renderlo incomprensibile a tutti coloro che non possiedono il codice di decriptazione, anche detto chiave.
+- [Redattori](#Redattori)
 
 
 ## Storia
@@ -76,6 +74,11 @@ La funzione di crittografia di hash trasforma una certa quantità di dati, come 
 
 Un esempio di un tipo di crittografia che la maggior parte di noi utilizzerà per buona parte della giornata è quella end to end. Questo sistema di comunicazione cifrata impedisce a terze parti, compresi internet service provider e gestori delle reti, di leggere o alternare i messaggi scambiati tra due persone. In molti sistemi di messaggistica i messaggi appunto vengono archiviati da terze parti per poi essere recuperati dal destinatario. Solitamente i dati vengono fatti transitare sotto protocolli cifrati, mentre per l'archiviazione non vi è alcun genere di crittografia; questo permetterebbe a chiunque di leggerne il contenuto.<br />
 La criptografia end-to-end ha proprio l'obiettivo di impedirne la modifica o la lettura, a ovvia eccezione del reale mittente e destinatari/o. Qualsiasi azienda che utilizza questa teconologia non è in grado di rilasciare, neppure alle autorità, i messaggi delle comunicazioni avvenute tra i loro utenti, se non cifrati. 
+
+
+## Redattori
+
+Questo documento è stato stilato completamente dalle seguenti persone, in base alle [informazioni recepite nella lista che sussegue](#Fonti): [Alessandro Mieli](https://alessandromieli.it/), Francesco Massimei, Gabriele Muzi e Lorenzo Napoli.
 
 
 ## Fonti
