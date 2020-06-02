@@ -66,10 +66,10 @@ Per garantirne il corretto funzionamento è necessario che ogni utente si crei a
     Considerate le notevoli esigenze hardware per consentire un efficace utilizzo di tale sistema è consigliabile l'uso combinato di questo e del metodo AES. Con l'RSA il codifica un unico messaggio, contenente una chiave segreta; tale chiave verrà poi utilizzata per scambiarsi suddetti messaggi con l'algoritmo a chiave simmetrica.<br />
     Oggi questo algoritmo è quello maggiormente utilizzato per la cifratura di firme digitali, insieme al DSS; anche questo come l'RSA fa uso di un sistema criptografico a chiave pubblica.
 
+
 ### Hash
 
 La funzione di crittografia di hash trasforma una certa quantità di dati, come un file o un messaggio, in una breve stringa fissa, detta *hash value* o *message digest*. Generalmente questo sistema viene utilizzato per garantire l'integrità di un dato messaggio, ovvero accertarsi che quest'utlimo non abbia subito cambiamenti. Qualsiasi modifica ai dati, sia intenzionale che non, cambierà il valore dell'hash. Questo sistema è unidirezionale e deve risultare estremamente difficile da invertire, non permettendo di risalire al valore originario. Gli algoritmi più utilizzati sono stati per molti tempo *MD5* e *SHA-1*, ora però considerati deboli e sostituiti quindi con, la famiglia degli *SHA-2* (*SHA-224*, *SHA-256*, *SHA-384*, *SHA-512*). Secondo gli esperti, anche non essendoci stati attacchi a favore di questa tesi, le varianti *SHA-2* essendo logicamente simili alla variante precedente *SHA-1*, nei prossimi anni necessiteremo di un nuovo standard *SHA-3*.
-  
 
 
 ### WhatsApp
@@ -89,3 +89,11 @@ La criptografia end-to-end ha proprio l'obiettivo di impedirne la modifica o la 
 - https://www.zerounoweb.it/techtarget/searchdatacenter/la-crittografia-quando-nasce-come-funziona-perche-e-alleata-della-sicurezza-informatica/
 
 - https://it.wikipedia.org/wiki/Advanced_Encryption_Standard.
+
+- https://it.wikipedia.org/wiki/RSA_(crittografia)
+
+- https://it.wikipedia.org/wiki/Digital_Signature_Algorithm
+
+- https://it.wikipedia.org/wiki/Funzione_crittografica_di_hash
+
+- https://it.wikipedia.org/wiki/Crittografia_end-to-end
